@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #4da6ff;
+    --secondary-color: #66cc66;
+    --tertiary-color: #cc66cc;
+    --footer-color: #0066cc;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr ;  
+    grid-template-areas: 
+        "site-header site-main widget-area"
+        "site-header site-main widget-area"
+        "site-header site-main widget-area"
+        "site-header site-footer widget-area";
+    gap: 10px;
+    min-height: 98vh;
+}
+/*
+.site-header {
+    grid-area: site-header;
+    background: var(--primary-color);
+    padding: 20px;
+    height: 110%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.site-main {
+    grid-area: site-main;
+    background: var(--secondary-color);
+    height: 110%;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.widget-area {
+    grid-area: widget-area;
+    background: var(--tertiary-color);
+    padding: 20px;
+    height: 110%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.site-footer {
+    grid-area: site-footer;
+    background-color: var(--footer-color);
+    padding: 20px;
+    color: white;
+    display: grid;
+    height: 110%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}*/ /*Chat GPT */
+
+
+
+
+/*.container {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 1fr auto;       
+    grid-template-areas: 
+        "site-header site-main widget-area"
+        "site-header site-footer widget-area";
+    gap: 10px;
+}*/
+
+.site-header {
+    grid-area: site-header;
+    background: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.site-main {
+    grid-area: site-main;
+    background: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.widget-area {
+    grid-area: widget-area;
+    background: var(--tertiary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.site-footer {
+    grid-area: site-footer;
+    background-color: var(--footer-color);
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
